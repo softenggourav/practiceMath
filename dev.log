@@ -1,0 +1,21 @@
+nohup: ignoring input
+
+> practicemath@0.0.0 dev
+> vite
+
+
+  VITE v4.5.14  ready in 316 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+2:02:59 PM [vite] hmr update /src/App.jsx
+2:08:36 PM [vite] hmr update /src/App.jsx
+2:08:36 PM [vite] page reload src/main.jsx
+2:08:36 PM [vite] hmr update /src/contexts/QuizContext.jsx
+2:08:36 PM [vite] hmr update /src/pages/QuizPage.jsx
+2:08:36 PM [vite] hmr update /src/pages/QuizSetupPage.jsx
+2:08:36 PM [vite] hmr update /src/pages/SummaryPage.jsx
+2:08:36 PM [vite] hmr update /src/pages/QuizSetupPage.jsx, /src/pages/QuizPage.jsx, /src/pages/SummaryPage.jsx
+2:08:36 PM [vite] vite.config.js changed, restarting server...
+2:08:36 PM [vite] server restarted.
+(!) Could not auto-determine entry point from rollupOptions or html files and there are no explicit optimizeDeps.include patterns. Skipping dependency pre-bundling.
