@@ -58,6 +58,18 @@ const theme = createTheme({
 
 function App() {
   useEffect(() => {
+    // Force favicon refresh
+    const forceFaviconRefresh = () => {
+      const favicon = document.querySelector('link[rel="icon"]');
+      if (favicon) {
+        const newHref = favicon.href.split('?')[0] + '?v=' + Date.now();
+        favicon.href = newHref;
+      }
+    };
+
+    // Force favicon refresh on app load
+    forceFaviconRefresh();
+
     // Register service worker for PWA functionality
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js')
