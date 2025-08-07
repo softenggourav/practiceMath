@@ -89,6 +89,9 @@ const QuizPage = () => {
       message: `Time's up! The correct answer was ${currentQuestion.correctAnswer}`,
     });
     setIsAnswered(true);
+    
+    // IMMEDIATELY move to next question when time runs out
+    handleNext();
   };
 
   const handleSubmit = () => {
@@ -128,11 +131,9 @@ const QuizPage = () => {
     setIsAnswered(true);
     setIsSubmitting(false);
 
-    // Auto-advance for correct answers
+    // Auto-advance for correct answers - INSTANT (no delay)
     if (isCorrect && quizConfig.autoAdvance) {
-      setTimeout(() => {
-        handleNext();
-      }, 800);
+      handleNext();
     }
   };
 
